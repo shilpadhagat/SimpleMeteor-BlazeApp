@@ -1,0 +1,24 @@
+<template name="search">
+  <div class="page-header clearfix">
+    <h4 class="pull-left">Frameworks</h4>
+    <div class="pull-right">
+      <input type="text" name="search" class="form-control" width="250px" placeholder="Find a framework...">
+    </div>
+  </div>
+
+  <ul class="list-group">
+    {{#if searching}}
+      {{> loading}}
+    {{else}}
+      {{#each frameworks}}
+        <li class="list-group-item clearfix">
+          <span class="pull-left">{{name}} by <strong>{{artist}}</strong></span>
+          <span class="pull-right">{{type}}</span>
+          <span class="pull-right">{{description}}</span>
+        </li>
+      {{else}}
+        <p class="alert alert-warning">Nothing found for {{query}}. Sorry, bub.</p>
+      {{/each}}
+    {{/if}}
+  </ul>
+</template>

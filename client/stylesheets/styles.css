@@ -1,13 +1,2 @@
+.table   { display: table; border-collapse: collapse;}
 
-body {
-  background: #eee;
-  color: #666666; 
-}
-
-th {
-  width: 33%;
-}
-
-.btn-primary {
-  margin-top: 10px;
-}

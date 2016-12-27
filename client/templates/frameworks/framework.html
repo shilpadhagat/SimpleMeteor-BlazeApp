@@ -1,16 +1,22 @@
+<template name="main">
+  <div><input id="search" placeholder="Search"></div>
+
+  {{> framework}}
+</template>
+
 <template name="framework">
-  <div class="framework" data-id="{{_id}}">
-  <div class='row'>
-		<div class='col-md-3' style="color:rgb(57,104,255)" >
-			{{name}} 
+  <div class="framework table" data-id="{{_id}}">
+  <div class='tablerow'>
+		<div class='col-md-3 tablecell' style="color:rgb(57,104,255)">
+			{{name}}
 		</div>
-		<div class='col-md-3'>	
+		<div class='col-md-3 tablecell'>	
 			{{type}}
 		</div>
-		<div class='col-md-3'>
+		<div class='col-md-3 tablecell'>
 			{{description}}
 		</div>
-		<div class='col-md-3'>
+		<div class='col-md-3 tablecell'>
 			<a type="click" style="color:rgb(57,104,255)" id="edit" class="glyphicon glyphicon-pencil"></a>
 			<a type="click" style="color:rgb(57,104,255)" id="delete" class="glyphicon glyphicon-trash"></a>
 		</div>
