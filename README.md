@@ -11,6 +11,7 @@ Now install the dependencies and start running the server
 $ curl https://install.meteor.com/ | sh
 $ git clone https://github.com/shilpadhagat/meteorBlazeApp
 $ cd meteorBlazeApp
+$ npm install
 $ meteor
 ```
 
