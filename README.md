@@ -1,9 +1,9 @@
-Simple Meteor App using Blaze
+#Simple Meteor App using Blaze
 ======
 Meteor is a full stack JavaScript (JS) framework, made up of a collection of libraries and packages, bound together.
 It allows writing both client and server parts of an application in JavaScript. 
 
-Quick Start
+##Quick Start
 =======
 Now install the dependencies and start running the server
 
